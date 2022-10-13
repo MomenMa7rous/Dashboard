@@ -74,6 +74,11 @@ a{
     position: sticky;
     top: 0;
     left: 0;
+    overflow-y: auto;
+}
+
+.sidebar::-webkit-scrollbar{
+    width: 1px;
 }
 
 .sidebar h3{
@@ -667,6 +672,138 @@ a{
 }
 
 /* End Projects Table */
+
+/* ============================================================= */
+
+/* Settings Page */
+
+/* Site Control Widget */
+
+.site-control textarea{
+    height: 150px;
+    outline: none;
+    border: 1px solid #ccc;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.site-control button{
+    outline: none;
+    transition: .2s;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.site-control button:hover{
+    background-color: var(--blue-alt-color);
+}
+
+@media (max-width: 767px){
+    .site-control label .toggle-switch{
+        width: 60px;
+        height: 30px;
+    }
+}
+
+/* End Site Control Widget */
+
+/* General Info Widget */
+
+.general-info input:disabled{
+    cursor: no-drop;
+    background-color: #f0f4f8;
+}
+
+.general-info input:disabled::placeholder{
+    color: #bbb;
+}
+
+/* End General Info Widget */
+
+/* Security Info Widget */
+
+.sec-info a.button{
+    transition: .2s;
+}
+
+.sec-info > div:not(:last-of-type){
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.sec-info a.button:hover{
+    background-color: var(--blue-alt-color);
+}
+
+@media (max-width: 767px){
+    .sec-info label .toggle-switch{
+        width: 60px;
+        height: 30px;
+    }
+}
+
+/* End Security Info Widget */
+
+/* Social Media Info Widget */
+
+.social-info i{
+    width: 40px;
+    height: 40px;
+    background-color: #f6f6f6;
+    border: 1px solid #ddd;
+    border-right: none;
+    border-radius: 6px 0 0 6px;
+    transition: .3s;
+}
+
+.social-info input{
+    height: 40px;
+    background-color: #f6f6f6;
+    border: 1px solid #ddd;
+    border-radius: 0 6px 6px 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.social-info div:focus-within > i{
+    color: #000;
+}
+
+/* End Social Media Info Widget */
+
+/* Widgets Control Widget */
+
+.widgets-control .control label{
+    cursor: pointer;
+}
+
+/* End Widgets Control Widget */
+
+/* Backup Manager Widget */
+
+.backup-manager .servers{
+    border-top: 1px solid #eee;
+}
+
+.backup-manager .servers input{
+    display: none;
+}
+
+.backup-manager .servers .server{
+    border: 2px solid #eee;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.backup-manager .servers input:checked + .server{
+    color: var(--blue-color);
+    border-color: var(--blue-color);
+}
+
+/* End Backup Manager Widget */
+
+/* End Settings Page */
+
+/* ============================================================= */
 
 /* Animations */
 

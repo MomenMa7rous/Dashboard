@@ -2,7 +2,7 @@
 * Website Design
 * Pages:
   * [x] Dashboard (Homepage)
-  * [ ] Settings Page
+  * [x] Settings Page
   * [ ] Profile Page
   * [ ] Projects Page
   * [ ] Courses Page
