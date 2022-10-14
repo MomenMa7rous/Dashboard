@@ -1063,6 +1063,67 @@ a{
 
 /* ============================================================= */
 
+/* ============================================================= */
+
+/* Friends Page */
+
+.page .content .friends-page{
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+@media (max-width: 767px){
+    .page .content .friends-page{
+        grid-template-columns: minmax(195px, 1fr);
+        margin: 0 10px;
+    }
+}
+
+.friends-page .friend .contact{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.friends-page .friend .contact i{
+    color: #666;
+    transition: .2s;
+    cursor: pointer;
+}
+.friends-page .friend .contact i:hover{
+    background-color: var(--blue-color);
+    color: #fff;
+}
+
+.friends-page .friend img{
+    width: 100px;
+    height: 100px;
+}
+
+.friends-page .friend .info{
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.friends-page .friend .info i{
+    margin-right: 5px;
+}
+
+.friends-page .friend .info .vip{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 40px;
+    opacity: 0.2;
+}
+
+.friends-page .friend .foot{
+    flex-wrap: wrap;
+}
+
+/* End Friends Page */
+
+/* ============================================================= */
+
 /* Animations */
 
 @keyframes change-color{
