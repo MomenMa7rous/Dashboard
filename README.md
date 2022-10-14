@@ -4,7 +4,7 @@
   * [x] Dashboard (Homepage)
   * [x] Settings Page
   * [x] Profile Page
-  * [ ] Projects Page `In Progress`
+  * [x] Projects Page
   * [ ] Courses Page
   * [ ] Friends Page
   * [ ] Files Page
