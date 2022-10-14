@@ -73,6 +73,12 @@
 .pl-15{
     padding-left: 15px;
 }
+.m-5{
+    margin: 5px;
+}
+.m-10{
+    margin: 10px;
+}
 .m-20{
     margin: 20px;
 }
@@ -93,6 +99,9 @@
 }
 .mr-15{
     margin-right: 15px;
+}
+.mr-20{
+    margin-right: 20px;
 }
 .mb-5{
     margin-bottom: 5px;
@@ -115,19 +124,19 @@
 .ml-10{
     margin-left: 10px;
 }
+.ml-20{
+    margin-left: 20px;
+}
 .w-full{
     width: 100%;
 }
 .w-fit{
     width: fit-content;
 }
-/* End Margin + Padding */
-
-/* Width + Height */
 .h-full{
     height: 100%;
 }
-/* End Width + Height */
+/* End Margin + Padding */
 
 /* Colors */
 .bg-white{
@@ -147,6 +156,9 @@
 }
 .bg-red{
     background-color: var(--red-color);
+}
+.bg-grey{
+    background-color: var(--grey-color);
 }
 .c-black{
     color: #000;
@@ -274,7 +286,6 @@
     background-color: var(--blue-color);
 }
 .toggle-checkbox:checked + .toggle-switch::before{
-    right: 4px;
     left: calc(100% - 28px);
     content: "\f00c";
     color: var(--blue-color);

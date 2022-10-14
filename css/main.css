@@ -659,6 +659,14 @@ a{
     border-right: 1px solid #eee;
 }
 
+.projects table tbody tr{
+    transition: .2s;
+}
+
+.projects table tbody tr:hover{
+    background-color: #f0f4f8;
+}
+
 .projects .responsive-table table tbody td img{
     width: 32px;
     height: 32px;
@@ -802,6 +810,141 @@ a{
 /* End Backup Manager Widget */
 
 /* End Settings Page */
+
+/* ============================================================= */
+
+/* ============================================================= */
+
+/* Profile Page */
+
+/* Overview Widget */
+
+.profile-page .overview .avatar-box{
+    max-width: 100%;
+    width: 300px;
+}
+
+.profile-page .overview .avatar-box img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+@media (min-width: 768px){
+    .profile-page .overview .avatar-box{
+        border-right: 1px solid #eee;
+    }
+}
+
+.profile-page .overview .avatar-box .progress{
+    height: 6px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-page .overview .avatar-box .progress span{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.profile-page .overview .info-box .row:not(:last-of-type){
+    border-bottom: 1px solid #eee;
+}
+
+.profile-page .overview .info-box .row .info{
+    flex-wrap: wrap;
+}
+
+.profile-page .overview .info-box .row .info div{
+    max-width: 100%;
+    width: 250px;
+}
+
+.profile-page .overview .info-box .row .info div label .toggle-switch{
+    width: 60px;
+    height: 20px;
+    font-size: 10px;
+}
+
+@media (max-width: 767px){
+    .profile-page .overview .info-box .row .info div{
+        justify-content: center;
+    }
+    .profile-page .overview .avatar-box{
+        border-bottom: 1px solid #eee;
+    }
+    .profile-page .overview{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+.profile-page .overview .info-box .row .info div label .toggle-switch::before{
+    height: 14px;
+    width: 14px;
+}
+
+.profile-page .overview .info-box .row .info div label .toggle-checkbox:checked + .toggle-switch::before{
+    left: calc(100% - 18px);
+    content: "\f00c";
+    color: var(--blue-color);
+}
+
+/* End Overview Widget */
+
+/* Other Data */
+
+@media (max-width: 767px){
+    .other-data{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+.other-data{
+    flex-wrap: wrap;
+}
+
+.other-data .skills ul li:not(:last-child){
+    border-bottom: 1px solid #eee;
+}
+
+.other-data .skills ul li span{
+    display: inline-block;
+    margin: 2px;
+}
+
+.other-data .skills{
+    flex-grow: 1;
+}
+
+.other-data .latest-activities{
+    flex-grow: 2;
+}
+
+.other-data .latest-activities .activity:not(:last-of-type){
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.other-data .latest-activities .activity img{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+@media (min-width: 768px){
+    .other-data .latest-activities .activity .date{
+        text-align: right;
+    }
+}
+
+/* End Other Data */
+
+/* End Profile Page */
 
 /* ============================================================= */
 
