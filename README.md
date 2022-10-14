@@ -5,7 +5,7 @@
   * [x] Settings Page
   * [x] Profile Page
   * [x] Projects Page
-  * [ ] Courses Page
+  * [x] Courses Page
   * [ ] Friends Page
   * [ ] Files Page
   * [ ] Plans Page

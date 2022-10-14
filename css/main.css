@@ -1014,6 +1014,55 @@ a{
 
 /* ============================================================= */
 
+/* ============================================================= */
+
+/* Courses Page */
+
+.page .content .courses-page{
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+@media (max-width: 767px){
+    .page .content .courses-page{
+        grid-template-columns: minmax(195px, 1fr);
+        margin: 0 10px;
+    }
+}
+
+.courses-page .course img.cover{
+    transition: .2s;
+    /* filter: blur(3px); */
+}
+
+.courses-page .course img.avatar{
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    top: 20px;
+    left: 20px;
+}
+
+.courses-page .course p.description{
+    line-height: 1.6;
+}
+
+.courses-page .course .info{
+    border-top: 1px solid #eee;
+}
+
+.courses-page .course .info span.title{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* End Courses Page */
+
+/* ============================================================= */
+
 /* Animations */
 
 @keyframes change-color{
