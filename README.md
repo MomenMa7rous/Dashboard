@@ -7,6 +7,6 @@
   * [x] Projects Page
   * [x] Courses Page
   * [x] Friends Page
-  * [ ] Files Page
+  * [x] Files Page
   * [ ] Plans Page
 * [Live Demo](#)

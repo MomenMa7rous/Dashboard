@@ -1124,6 +1124,92 @@ a{
 
 /* ============================================================= */
 
+/* ============================================================= */
+
+/* Files Page */
+
+.files-page .stats{
+    min-width: 250px;
+}
+
+.files-page{
+    flex-direction: row-reverse;
+    align-items: flex-start;
+}
+
+@media (max-width: 767px){
+    .files-page{
+        flex-direction: column;
+        align-items: normal;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+.files-page .files{
+    flex: 1;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.files-page .files .file img{
+    width: 64px;
+    height: 64px;
+    transition: .3s;
+}
+
+.files-page .files .file:hover img{
+    transform: rotate(5deg);
+}
+
+.files-page .files .file i{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.files-page .files .file .info{
+    border-top: 1px solid #eee;
+}
+
+.files-page .stats .box .icon{
+    width: 40px;
+    height: 40px;
+}
+
+.files-page .stats .box .icon.blue{
+    background-color: #0075ff33;
+}
+
+.files-page .stats .box .icon.green{
+    background-color: #22c55e33;
+}
+
+.files-page .stats .box .icon.red{
+    background-color: #f4433633;
+}
+
+.files-page .stats .box .icon.orange{
+    background-color: #f59e0b33;
+}
+
+.files-page .stats a{
+    transition: .2s;
+    padding: 10px 15px;
+    margin: 0 auto;
+}
+
+.files-page .stats a:hover i{
+    animation: go-up .8s infinite;
+}
+
+.files-page .stats a:hover{
+    background-color: var(--blue-alt-color);
+}
+
+/* End Files Page */
+
+/* ============================================================= */
+
 /* Animations */
 
 @keyframes change-color{
@@ -1132,6 +1218,18 @@ a{
     }
     to{
         background-color: white;
+    }
+}
+
+@keyframes go-up {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2px);
+    }
+    100%{
+        transform: translateY(0);
     }
 }
 
