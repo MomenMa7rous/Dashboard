@@ -8,5 +8,5 @@
   * [x] Courses Page
   * [x] Friends Page
   * [x] Files Page
-  * [ ] Plans Page
+  * [x] Plans Page
 * [Live Demo](#)

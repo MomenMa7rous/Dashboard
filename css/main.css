@@ -1210,6 +1210,60 @@ a{
 
 /* ============================================================= */
 
+/* ============================================================= */
+
+/* Plans Page */
+
+.plans-page .plan .plan-head{
+    border: 3px solid white;
+    outline: 3px solid transparent;
+}
+
+.plans-page .plan.green .plan-head{
+    outline-color: var(--green-color); 
+}
+
+.plans-page .plan.blue .plan-head{
+    outline-color: var(--blue-color); 
+}
+
+.plans-page .plan.orange .plan-head{
+    outline-color: var(--orange-color); 
+}
+
+.plans-page .plan .plan-head span.price{
+    font-size: 40px;
+    margin: 0 auto;
+}
+
+.plans-page .plan .plan-head span.price > span{
+    position: absolute;
+    font-size: 22px;
+    top: 0;
+    left: -18px;
+}
+
+.plans-page .plan ul.feats li{
+    border-bottom: 1px solid #eee;
+}
+
+.plans-page .plan ul.feats li i.availability{
+    color: var(--red-color);
+    font-size: 18px;
+}
+
+.plans-page .plan ul.feats li i.yes{
+    color: var(--green-color);
+}
+
+.plans-page .plan ul.feats li i.help{
+    cursor: pointer;
+}
+
+/* End Plans Page */
+
+/* ============================================================= */
+
 /* Animations */
 
 @keyframes change-color{
